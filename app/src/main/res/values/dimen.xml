@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- dimensi untuk fab -->
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- dimensi untuk layout pada EditActivity -->
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="layout_in_edit_category">4dp</dimen>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_supplier_options">
+        <item>@string/supplier_indomart</item>
+        <item>@string/supplier_alfamart</item>
+        <item>@string/supplier_lottemart</item>
+        <item>@string/supplier_hypermart</item>
+    </string-array>
+</resources>

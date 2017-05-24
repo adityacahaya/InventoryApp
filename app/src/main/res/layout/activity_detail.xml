@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundMainMenu">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_margin"
+        android:orientation="vertical"
+        tools:context="com.wordpress.kadekadityablog.inventoryapp.DetailActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/edit_activity_overview_product"
+                style="@style/CategoryStyle" />
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="@dimen/layout_in_edit_category"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/edit_product_name"
+                    android:hint="@string/edit_activity_product_name"
+                    android:inputType="textCapWords"
+                    style="@style/EditorFieldStyle" />
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="@dimen/layout_in_edit_category">
+                    <TextView
+                        android:id="@+id/label_curency_units"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/edit_activity_curency"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+                    <EditText
+                        android:id="@+id/edit_product_price"
+                        android:hint="@string/edit_activity_product_price"
+                        android:inputType="number"
+                        style="@style/EditorFieldStyle" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/edit_activity_image_product"
+                style="@style/CategoryStyle" />
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="@dimen/layout_in_edit_category"
+                android:paddingTop="@dimen/layout_in_edit_category"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/edit_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@mipmap/ic_launcher"/>
+                <Button
+                    android:id="@+id/btn_edit_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="From Camera (Max 200kb)"/>
+                <Button
+                    android:id="@+id/btn_galery_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="From Galery (Max 200kb)"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/edit_activity_quantity_product" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/layout_in_edit_category"
+                android:paddingTop="@dimen/layout_in_edit_category">
+                <TextView
+                    android:id="@+id/label_product_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="4dp"
+                    android:text="@string/edit_activity_initial_quantity"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/btn_decrease"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/edit_activity_button_decrease" />
+                    <Button
+                        android:id="@+id/btn_increase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/edit_activity_button_increase" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/edit_activity_supplier_product" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/layout_in_edit_category"
+                android:paddingTop="@dimen/layout_in_edit_category">
+                <Spinner
+                    android:id="@+id/spinner_supplier"
+                    android:layout_height="48dp"
+                    android:layout_width="wrap_content"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

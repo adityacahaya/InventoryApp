@@ -1,0 +1,36 @@
+<resources>
+    <!-- app name -->
+    <string name="app_name">Inventory App</string>
+
+    <!-- if listView empty -->
+    <string name="empty_view_title_text">Inventory Empty</string>
+    <string name="empty_view_subtitle_text">Get started add a stuff</string>
+
+    <!-- menu in Main -->
+    <string name="menu_main_deleteall">Delete All</string>
+
+    <!-- menu in Edit -->
+    <string name="menu_edit_delete">Delete</string>
+    <string name="menu_edit_save">Save</string>
+
+    <!-- Nama-nama opsi pada Edit -->
+    <string name="edit_activity_overview_product">Detail Product</string>
+    <string name="edit_activity_product_name">Product Name</string>
+    <string name="edit_activity_product_price">Price</string>
+    <string name="edit_activity_curency">Rp.</string>
+    <string name="edit_activity_image_product">Image Product</string>
+    <string name="edit_activity_button_edit_image">Edit Image</string>
+    <string name="edit_activity_quantity_product">Quantity Product</string>
+    <string name="edit_activity_initial_quantity">0</string>
+    <string name="edit_activity_button_sale">Sale</string>
+    <string name="edit_activity_button_order">Order</string>
+    <string name="edit_activity_button_decrease">Decrease</string>
+    <string name="edit_activity_button_increase">Increase</string>
+    <string name="edit_activity_supplier_product">Supplier Product</string>
+    
+    <!-- nama-nama supplier di spinner -->
+    <string name="supplier_indomart">Indomaret</string>
+    <string name="supplier_alfamart">Alfamart</string>
+    <string name="supplier_lottemart">Lotte Mart</string>
+    <string name="supplier_hypermart">Hyper Mart</string>
+</resources>
